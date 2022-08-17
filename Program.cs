@@ -7,9 +7,9 @@
 Console.WriteLine("Enter the number: ");   //не стал ограничивать программу пятизначным числом. Работает для любого int32
 int number = Convert.ToInt32(Console.ReadLine());
 int numberStraith = number;
-int numberReverse = 0;
+int numberReverse = 0;  //переменная для перевёрнутого числа number
 
-while (numberStraith > 0) 
+while (numberStraith > 0)       //разворачиваем number умножением остатка от деления на 10
 {
     numberReverse *= 10;
     numberReverse += numberStraith % 10;
@@ -29,7 +29,7 @@ else
 
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
 
-// Console.WriteLine("Enter coordinates point A: ");
+// Console.WriteLine("Enter coordinates point A: "); //запрашиваем ручной ввод каждой координаты для обеих точек
 // Console.WriteLine("Enter Xa: ");
 // double Xa = Convert.ToInt32(Console.ReadLine());
 
@@ -49,13 +49,14 @@ else
 // Console.WriteLine("Enter Zb: ");
 // double Zb = Convert.ToInt32(Console.ReadLine());
 
-// Console.WriteLine($"A: ({Xa},{Ya},{Za}), B: ({Xb},{Yb},{Zb})");
+// Console.WriteLine($"A: ({Xa},{Ya},{Za}), B: ({Xb},{Yb},{Zb})");  //вывод координат для пользователя
 
-// double Lenth = Math.Sqrt((Xa-Xb)*(Xa-Xb) + (Ya-Yb)*(Ya-Yb) + (Za-Zb)*(Za-Zb));
-// Console.WriteLine($"Lenth AB = {Lenth} ");
+// double Lenth = Math.Sqrt((Xa-Xb)*(Xa-Xb) + (Ya-Yb)*(Ya-Yb) + (Za-Zb)*(Za-Zb)); //находим расстояние
+// Console.WriteLine($"Lenth AB = {Lenth} "); //расстояние без округления
 
 
 // Задача 23
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
 // Console.WriteLine("Enter the number: ");
 // int number = Convert.ToInt32(Console.ReadLine());
@@ -70,7 +71,5 @@ else
 
 
 
-// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-// 3 -> 1, 8, 27
-// 5 -> 1, 8, 27, 64, 125
+
