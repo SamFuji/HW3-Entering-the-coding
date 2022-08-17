@@ -4,13 +4,26 @@
 
 // Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
+Console.WriteLine("Enter the number: ");   //не стал ограничивать программу пятизначным числом. Работает для любого int32
+int number = Convert.ToInt32(Console.ReadLine());
+int numberStraith = number;
+int numberReverse = 0;
 
+while (numberStraith > 0) 
+{
+    numberReverse *= 10;
+    numberReverse += numberStraith % 10;
+    numberStraith /= 10;
+}
+if  (numberReverse == number)
+{
+    Console.Write("The Number is Polindrom");
+}
+else
+{
+    Console.Write("The Number is NOT Polindrom ");
+}
 
-// 14212 -> нет
-
-// 12821 -> да
-
-// 23432 -> да
 
 // Задача 21
 
@@ -44,16 +57,16 @@
 
 // Задача 23
 
-Console.WriteLine("Enter the number: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int count = 1;
-double cube = 1;
-while (count <= number)
-{
-     cube = Math.Pow (count, 3);
-     Console.WriteLine($"The cube of number {count} is: {cube}");
-     count++;
-}
+// Console.WriteLine("Enter the number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int count = 1;
+// int cube = 1;
+// while (count <= number)
+// {
+//      cube =Convert.ToInt32( Math.Pow (count, 3));
+//      Console.WriteLine($"The cube of number {count} is: {cube}");
+//      count++;
+// }
 
 
 
